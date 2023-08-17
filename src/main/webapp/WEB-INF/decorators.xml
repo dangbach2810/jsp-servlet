@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding = "UTF-8"?>
+<decoretors defaultdir="/decorators">
+	<!-- bỏ qua các url bắt đầu bằng api và không apply giao diện-->
+	<!-- dấu * là bất kì kí tự gì -->
+	<excludes>
+		<pattern>/api*</pattern>
+	</excludes>
+	<!-- Apply sitemech default template -->
+	
+	<decorator name ="admin" page="admin.jsp">
+		<pattern>/admin*</pattern>
+	</decorator>
+	<decorator name ="web" page="web.jsp">
+		<pattern>/*</pattern>
+	</decorator>
+	
+	<decorator name ="dang-nhap" page="login.jsp">
+		<pattern>/dang-nhap</pattern>
+	</decorator>
+</decoretors>
+
